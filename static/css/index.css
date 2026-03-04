@@ -149,6 +149,18 @@ body {
     font-family: 'Inter', sans-serif !important;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    overflow: visible;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 0.5rem;
+}
+
+/* 为作者列表预留右侧空间，避免被 More Works 按钮遮挡最后一个名字 */
+@media screen and (min-width: 769px) {
+  section.hero:first-of-type .hero-body {
+    padding-right: 8rem;
+  }
 }
 
 .publication-venue {
@@ -202,7 +214,8 @@ body {
 
 .author-block {
   display: inline-block;
-  margin-right: 0.5rem;
+  margin-right: 0;
+  white-space: nowrap;
 }
 
 .publication-banner img {
