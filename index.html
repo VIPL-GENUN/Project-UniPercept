@@ -264,12 +264,11 @@
       </div>
     </section>
 
-
     <!-- Banner -->
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
           <div class="column is-full">
-            <img src="static/images/banner.png" alt="banner">
+            <img src="static/images/banner.jpg" alt="banner">
             <p class="mt-4 mb-5">
               Overview of visual perception tasks supported by UniPercept, including structural, semantic, and material / lighting properties.
             </p>
@@ -285,12 +284,23 @@
         <div class="columns is-centered has-text-centered">
           <div class="column is-12">
             <h2 class="title is-3">Abstract</h2>
-            <div class="content has-text-justified">
-              <p>
-                Diffusion models have shown impressive performance in generative tasks, demonstrating their ability to capture detailed structural and semantic information. Recently, these capabilities have been extended to visual understanding, with studies employing diffusion models as the backbone for various perception tasks. However, existing diffusion-based perception models are generally restricted to a single task or a fixed set of predefined tasks, lacking an efficient mechanism to generalize to novel tasks.
-                To overcome this limitation, we propose a unified DiT-based perception framework called <strong>UniPercept</strong>, which introduces a novel foundation–adapter paradigm for general visual perception. In this framework, a shared diffusion-based foundation model is trained to capture common and generalizable visual knowledge across diverse perception tasks, with task-specific adapters integrated for each individual task.
-                Leveraging its superior generalization ability, the foundation model can be efficiently adapted to novel domains through lightweight adapters, requiring as few as <strong>1,000</strong> training samples and less than <strong>1%</strong> of trainable parameters. Furthermore, <strong>UniPercept</strong> demonstrates strong performance across various perception tasks, outperforming state-of-the-art generalist models in most cases and achieving accuracy comparable to specialist models.
-              </p>
+            <div class="columns">
+              <div class="column is-8">
+                <div class="content has-text-justified abstract-text">
+                  <p>
+                    Diffusion models have shown impressive performance in generative tasks, demonstrating their ability to capture detailed structural and semantic information. Recently, these capabilities have been extended to visual understanding, with studies employing diffusion models as the backbone for various perception tasks. However, existing diffusion-based perception models are generally restricted to a single task or a fixed set of predefined tasks, lacking an efficient mechanism to generalize to novel tasks.
+                    To overcome this limitation, we propose a unified DiT-based perception framework called <strong>UniPercept</strong>, which introduces a novel foundation-adapter paradigm for general visual perception. In this framework, a shared diffusion-based foundation model is trained to capture common and generalizable visual knowledge across diverse perception tasks, with task-specific adapters integrated for each individual task.
+                    Leveraging its superior generalization ability, the foundation model can be efficiently adapted to novel domains through lightweight adapters, requiring as few as <strong>1,000</strong> training samples and less than <strong>1%</strong> of trainable parameters. Furthermore, <strong>UniPercept</strong> demonstrates strong performance across various perception tasks, outperforming state-of-the-art generalist models in most cases and achieving accuracy comparable to specialist models.
+                  </p>
+                </div>
+              </div>
+              <div class="column is-4 has-text-centered">
+                <figure class="image">
+                  <img src="static/images/framework.png"
+                       alt="Framework of UniPercept"
+                       style="max-height: 600px; width: auto; height: auto;">
+                </figure>
+              </div>
             </div>
           </div>
         </div>
@@ -307,98 +317,98 @@
     
             <h2 class="title is-4">Image-to-Depth</h2>
             <figure class="image mb-6">
-              <img src="static/images/depth.png"
+              <img src="static/images/depth.jpg"
                    alt="Image-to-Depth"
                    loading="lazy">
             </figure>
     
             <h2 class="title is-4">Image-to-Normal</h2>
             <figure class="image mb-6">
-              <img src="static/images/normal.png"
+              <img src="static/images/normal.jpg"
                    alt="Image-to-Normal"
                    loading="lazy">
             </figure>
 
             <h2 class="title is-4">Image-to-Albedo</h2>
             <figure class="image mb-6">
-              <img src="static/images/albedo.png"
+              <img src="static/images/albedo.jpg"
                    alt="Image-to-Albedo"
                    loading="lazy">
             </figure>
 
             <h2 class="title is-4">Image-to-Irradiance</h2>
             <figure class="image mb-6">
-              <img src="static/images/irradiance.png"
+              <img src="static/images/irradiance.jpg"
                    alt="Image-to-Irradiance"
-                   loading="lazy">
-            </figure>
-
-            <h2 class="title is-4">Image-to-Semantic Segmentation</h2>
-            <figure class="image mb-6">
-              <img src="static/images/semantic_segmentation.png"
-                   alt="Semantic Segmentation"
-                   loading="lazy">
-            </figure>
-
-            <h2 class="title is-4">Image-to-Dichotomous Segmentation</h2>
-            <figure class="image mb-6">
-              <img src="static/images/dichotomous_segmentation.png"
-                   alt="Dichotomous Segmentation"
-                   loading="lazy">
-            </figure>
-
-            <h2 class="title is-4">Image-to-Line Art</h2>
-            <figure class="image mb-6">
-              <img src="static/images/line_art.png"
-                   alt="Line Art"
-                   loading="lazy">
-            </figure>
-
-            <h2 class="title is-4">Image-to-Edge Detection</h2>
-            <figure class="image mb-6">
-              <img src="static/images/edge.png"
-                   alt="Edge Detection"
                    loading="lazy">
             </figure>
 
             <h2 class="title is-4">Image-to-Metallicity</h2>
             <figure class="image mb-6">
-              <img src="static/images/metallicity.png"
+              <img src="static/images/metallicity.jpg"
                    alt="Metallicity"
                    loading="lazy">
             </figure>
 
             <h2 class="title is-4">Image-to-Roughness</h2>
             <figure class="image mb-6">
-              <img src="static/images/roughness.png"
+              <img src="static/images/roughness.jpg"
                    alt="Roughness"
+                   loading="lazy">
+            </figure>
+
+            <h2 class="title is-4">Image-to-Semantic Segmentation</h2>
+            <figure class="image mb-6">
+              <img src="static/images/semantic_segmentation.jpg"
+                   alt="Semantic Segmentation"
+                   loading="lazy">
+            </figure>
+
+            <h2 class="title is-4">Image-to-Dichotomous Segmentation</h2>
+            <figure class="image mb-6">
+              <img src="static/images/dichotomous_segmentation.jpg"
+                   alt="Dichotomous Segmentation"
+                   loading="lazy">
+            </figure>
+
+            <h2 class="title is-4">Image-to-Line Art</h2>
+            <figure class="image mb-6">
+              <img src="static/images/line_art.jpg"
+                   alt="Line Art"
+                   loading="lazy">
+            </figure>
+
+            <h2 class="title is-4">Image-to-Edge Detection</h2>
+            <figure class="image mb-6">
+              <img src="static/images/edge.jpg"
+                   alt="Edge Detection"
                    loading="lazy">
             </figure>
 
             <h2 class="title is-4">Image-to-Human Skeleton</h2>
             <figure class="image mb-6">
-              <img src="static/images/human_skeleton.png"
+              <img src="static/images/human_skeleton.jpg"
                    alt="Human Skeleton"
                    loading="lazy">
             </figure>
 
             <h2 class="title is-4">Image-to-DensePose</h2>
             <figure class="image mb-6">
-              <img src="static/images/densepose.png"
+              <img src="static/images/densepose.jpg"
                    alt="DensePose"
                    loading="lazy">
             </figure>
 
             <h2 class="title is-4">Image-to-Animal Pose</h2>
             <figure class="image mb-6">
-              <img src="static/images/animal_pose.png"
+              <img src="static/images/animal_pose.jpg"
                    alt="Animal Pose"
                    loading="lazy">
             </figure>
 
             <h2 class="title is-4">Image-to-Line Segment</h2>
             <figure class="image mb-6">
-              <img src="static/images/line_segment.png"
+              <img src="static/images/line_segment.jpg"
                    alt="Line Segment"
                    loading="lazy">
             </figure>

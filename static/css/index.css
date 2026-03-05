@@ -156,13 +156,6 @@ body {
     gap: 0.25rem 0.5rem;
 }
 
-/* 为作者列表预留右侧空间，避免被 More Works 按钮遮挡最后一个名字 */
-@media screen and (min-width: 769px) {
-  section.hero:first-of-type .hero-body {
-    padding-right: 8rem;
-  }
-}
-
 .publication-venue {
     color: var(--text-secondary);
     width: fit-content;
@@ -352,6 +345,12 @@ body {
 
 .content.has-text-justified p {
   margin-bottom: 1.5rem;
+}
+
+/* Abstract text specific tuning */
+.content.has-text-justified.abstract-text {
+  font-size: 0.98rem;
+  line-height: 1.66;
 }
 
 /* Footer Improvements */
